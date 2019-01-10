@@ -13,8 +13,8 @@ html{
 body{
 
 	width: 100%;
-
-	font-family: "Montserrat", "Helvetica Neue", Arial, Helvetica, sans-serif;
+	height: 100%;
+	font-family: "Montserrat", "Helvetica Neue", Arial, Helvetica, sans-serif !important;
 	color: #333333;
 	background-color: #f4f4f4;
 }
@@ -27,6 +27,80 @@ body{
 .color-amarillo{
 	color: yellowgreen;
 }
+
+/* navegacion */
+
+.navbar{
+	padding: 10px 0;
+	border-bottom: none;
+	letter-spacing: 1px;
+	background: rgba(0,0,0, 0.6) !important;
+	-webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+	-moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+	transition: background .5s ease-in-out, padding .5s ease-in-out;
+	padding-right: 40px !important;
+	padding-left: 40px !important;
+}
+
+
+navbar-brand{
+	font-weight: 700;
+}
+
+navbar-brand:focus{
+	outline: none;
+}
+
+.navbar-burger:active, .navbar-burger:hover, .navbar-burger:focus{
+	color: #f4f4f4;
+}
+
+.navbar-personalizada a{
+	color: #f4f4f4;
+}
+
+.navbar-menu{
+	background: rgba(0,0,0, 0,4) !important;
+	background-color: unset !important;
+	box-shadow: unset !important;
+	
+}
+
+.navbar-end .navbar-item{
+	-webkit-transition: background .3s ease-in-out;
+	-moz-transition: background .3s ease-in-out;
+	transition: background .3s ease-in-out;
+	
+
+}
+
+.navbar-item:hover,
+.navbar-item:focus,
+.navbar-item:active
+{
+	outline: none !important;
+	background-color: rgba(255, 255, 255, 0.4) !important;
+	color: #f4f4f4 !important;
+
+}
+
+.navbar-burger{
+	padding: 4px 6px;
+	font-size: 16px;
+	color: #f4f4f4;
+}
+
+.navbar-burger:focus,
+.navbar-burger:active{	
+	outline: none;
+}
+
+.colapsar-nav{
+	padding: 0;
+	background-color:  #333333;
+	background: rgba(0,0,0, 1) !important;
+}
+
 
 /* Tipografía */
 
@@ -53,10 +127,8 @@ a:hover, a:focus{
 }
 
 #intro{
-	display: table;
 	width: 100%;
-	height: auto;
-	padding: 100px 0;
+	height: 400px;
 	text-align: center;
 	color: #f4f4f4; 
 	background: url(../img/futbol4.jpg) no-repeat bottom center scroll;
@@ -66,10 +138,8 @@ a:hover, a:focus{
 	background-size: cover;
 }
 
-#intro .cuerpo{
-    display: table-cell;
-    vertical-align: middle;	
-    
+.cuerpo{
+	margin-top: 70px;
 }
 
 .texto-bienvenidos{
@@ -78,7 +148,10 @@ a:hover, a:focus{
 
 .texto{
 	font-size: 18px;
+	
 	background: rgba(0,0,0, 0.6);
+	background-size: 50%;
+	margin-left: 12px;
 }
 
 @media(min-width:767px){
@@ -89,17 +162,57 @@ a:hover, a:focus{
 	}
 
 	.texto-bienvenidos{
-		font-size: 100px;
+		font-size: 50px;
+	}
+
+	.texto{
+		font-size: 20px;
+	}
+
+	.container-carousel{
+		max-width: 700px;
+	}
+
+	.colapsar-nav{
+		padding: 0;
+		background-color:  #333333;
+		background: rgba(0,0,0, 1) !important;
+	}
+
+}
+
+
+@media(min-width:992px){
+	
+	#intro{
+		height: 600px;
+		padding: 0;
+	}
+
+	.texto-bienvenidos{
+		font-size: 70px;
 	}
 
 	.texto{
 		font-size: 25px;
 	}
 
+	.container-carousel{
+		max-width: 800px;
+	}
+
+	.colapsar-nav{
+		padding: 0;
+		background-color:  #333333;
+		background: rgba(0,0,0, 1) !important;
+	}
+
+
 }
 
 #empresa{
-    text-align: center;
+	text-align: center;
+	padding: 20px;
 }    
 
 .cuadrado{
@@ -117,19 +230,102 @@ a:hover, a:focus{
     margin-right: unset !important;
 }
 
+.column{
+	align-items: center;
+}
+
+#servicios{
+	text-align: center;
+	padding-left: 12px;
+    padding-top: 40px;
+	color: #f4f4f4;
+	background-color: #6fbb10;
+    background:  #6fbb10;
+	background: -moz-linear-gradient(top,  #6fbb10 23%,  #6fbb10 23%,  #6fbb10 29%,  #6fbb10 36%,  #6fbb10 55%,  #6fbb10 55%, green 100%);
+    background: -webkit-linear-gradient(top,  #6fbb10 23%, #6fbb10 23%, #6fbb10 29%, #6fbb10 36%, #6fbb10 55%, #6fbb10 55%, green 100%);
+    background: linear-gradient(to bottom,  #6fbb10 23%, #6fbb10 23%, #6fbb10 29%, #6fbb10 36%, #6fbb10 55%, #6fbb10 55%, green 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='green', endColorstr='#6fbb10',GradientType=0 );
+}    
+
+#servicios h2, #servicios p, #servicios img{
+
+	margin: 0 0 10px 0;
+	padding: 0;
+	font-size: 20px;
+}
+
+#white{
+	color: #f4f4f4 !important;
+	font-weight: 800 !important;
+	font-size: 22px;
+}
+
+.imagen-demo{
+	width: 100%;
+	height: 100%;
+}
+
+.carousel img{
+	border-radius: 25px !important;
+	
+}
+
+#clientes{
+	text-align: center;
+	padding-left: 12px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}    
+
+#contacto{
+	text-align: center;
+	padding-left: 12px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: #333333;
+	color: #f4f4f4;
+}    
+
+
+#clientes h2{
+	font-weight: 800;
+	font-size: 25px;
+}
+
+.botones-contacto a{
+	margin: 8px !important;
+}
+
+i{
+	padding-right: 7px;
+}
+
 @media(max-width:320px){
 	
 	#intro{
-		height: 100%;
+		height: 300px;
 		padding: 0;
 	}
 
 	.texto-bienvenidos{
-		font-size: 100px;
+		font-size: 20px;
 	}
 
 	.texto{
-		font-size: 25px;
+		font-size: 15px;
 	}
+
+	
+.navbar{
+	padding: 0;
+	border-bottom: none;
+	letter-spacing: 1px;
+	background: black;
+	-webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+	-moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+	transition: background .5s ease-in-out, padding .5s ease-in-out;
+	padding-right: 0 !important;
+	padding-left: 0 !important;
+}
 
 }

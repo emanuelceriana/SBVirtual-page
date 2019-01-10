@@ -11,17 +11,55 @@
 
 <link href="css/styles.css" rel="stylesheet">
 <link href="css/bulma.min.css" rel="stylesheet">
+<link href="css/bulma-carousel.min.css" rel="stylesheet">
+
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
     crossorigin="anonymous">
 
 </head>
 
-<body id="pagina-arriba" data-target=".navbar-personalizada">
+<body id="pagina-arriba" data-spy="scroll" data-target=".navbar-personalizada">
+
+    <nav class="navbar navbar-personalizada is-fixed-top" role="navigation" aria-label="main navigation">
+
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#pagina-arriba">
+                ScoreBoard-Virtual
+            </a>
+
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item pagina-scroll" href="#empresa">
+                    Empresa
+                </a>
+
+                <a class="navbar-item pagina-scroll" href="#servicios">
+                    Servicios
+                </a>
+
+                <a class="navbar-item pagina-scroll" href="#clientes">
+                    Clientes
+                </a>
+
+                <a class="navbar-item pagina-scroll" href="#contacto">
+                    Contacto
+                </a>
+
+            </div>
+        </div>
+    </nav>
 
     <section id="intro">
-        <div class="columns cuerpo">
-            <div class="column is-full">
-                <h1 class="texto-bienvenidos">Bienvenidos</h1>
+        <div class="columns">
+            <div class="column cuerpo ">
+                <h1 class="texto-bienvenidos">ScoreBoard Virtual</h1>
                 <p class="texto">
                     Viví cada GOL cómo si fuera unico con el marcador
                     <strong>
@@ -126,8 +164,100 @@
         </div>
     </section>
 
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  -->
-    <!-- <script src="js/main.js"></script>   -->
+
+    <section id="servicios">
+        <div class="columns">
+            <div class="column">
+                <h2>Nuestros Servicios</h2>
+                <p class="lead"><strong id="white">ScoreBoard-Virtual</strong> marcadores personalizados para tus
+                    torneos de Fut-Sala.</p>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column container-carousel">
+                <div class='carousel carousel-animated carousel-animate-fade' data-autoplay="true">
+                    <div class='carousel-container'>
+                        <div class='carousel-item has-background is-active'>
+                            <img class="is-background" src="./img/demo1.png" alt="" width="640" height="310" />
+                        </div>
+
+                        <div class='carousel-item has-background'>
+                            <img class="is-background" src="./img/demo2.png" alt="" width="640" height="310" />
+                        </div>
+
+                        <div class='carousel-item has-background'>
+                            <img class="is-background" src="./img/demo3.png" alt="" width="640" height="310" />
+                        </div>
+
+                        <div class='carousel-item has-background'>
+                            <img class="is-background" src="./img/demo4.png" alt="" width="640" height="310" />
+                        </div>
+                    </div>
+
+                    <div class="carousel-navigation is-centered">
+                        <div class="carousel-nav-left">
+                            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                        </div>
+                        <div class="carousel-nav-right">
+                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="clientes">
+        <div class="columns">
+            <div class="column">
+                <h2>Nuestros Clientes</h2>
+                <img src="img/costa-rica.png" width="110">
+                <img src="img/scotia.png" width="250">
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <div class="columns">
+            <div class="column">
+
+                <h2>Contacto ScoreBoard-Virtual</h2>
+                <p>Nos interesa saber lo que pensás, escribinos a través del formulario de contacto!</p>
+                <p>Contacto@scoreboard-virtual.com</p>
+            </div>
+        </div>
+
+        <div class="columns">
+            <div class="column botones-contacto">
+
+                <a href="" class="button is-success">
+                    <i class="fab fa-twitter"></i>
+                    <span class="network-name">Twitter</span>
+                </a>
+
+
+
+                <a href="" class="button is-success">
+                    <i class="fab fa-google-plus-g"></i>
+                    <span class="network-name">Facebook</span>
+                </a>
+
+
+
+                <a href="" class="button is-success">
+                    <i class="fab fa-facebook-f"></i>
+                    <span class="network-name">Google</span>
+                </a>
+
+            </div>
+        </div>
+
+    </section>
+
+    <script src="./js/bulma-carousel.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </body>
 
 </html>
