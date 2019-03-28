@@ -136,7 +136,7 @@ a:hover, a:focus{
 	height: 400px;
 	text-align: center;
 	color: #f4f4f4; 
-	background: url(../img/futbol4.jpg) no-repeat bottom center scroll;
+	background: url(../img/deportes2.jpg) no-repeat bottom center scroll;
 	background-color:#333333;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -149,6 +149,7 @@ a:hover, a:focus{
 
 .texto-bienvenidos{
 	font-size: 40px;
+	background: rgba(0,0,0, 0.6);
 }
 
 .texto{
@@ -168,6 +169,7 @@ a:hover, a:focus{
 
 	.texto-bienvenidos{
 		font-size: 50px;
+		background: rgba(0,0,0, 0.6);
 	}
 
 	.texto{
@@ -196,6 +198,7 @@ a:hover, a:focus{
 
 	.texto-bienvenidos{
 		font-size: 70px;
+		background: rgba(0,0,0, 0.6);
 	}
 
 	.texto{
