@@ -6,6 +6,19 @@ https://templatemo.com/tm-526-vanilla
 
 */
 
+#language {
+  position: absolute;
+  top: 1em;
+  right: 0;
+  width: 10em;
+  /* height: 20em; */
+  color: #ffff;
+}
+
+#language img{
+  width: 40px; height: 40px;
+}
+
 p {
   font-size: 15px;
   line-height: 25px;
