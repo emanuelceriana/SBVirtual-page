@@ -124,12 +124,12 @@ a:hover { color: #FF0; }
 
 .primary-button a {
   display: inline-block;
-  background-color: #ff7d27;
+  background-color:#ff7d27;;
   padding: 15px 24px;
   border-radius: 3px;
   text-transform: uppercase;
   font-size: 11px;
-  color: #fff;
+  color: #000;
   font-weight: 700;
   text-decoration: none;
   letter-spacing: 0.5px;
@@ -151,7 +151,7 @@ a:hover { color: #FF0; }
 
 .baner-content h1 {
   margin-top: 0px;
-  font-size: 128px;
+  font-size: 88px;
   color: #fff;
   font-weight: 900;
   text-transform: uppercase;
@@ -166,7 +166,7 @@ a:hover { color: #FF0; }
 
 .baner-content span {
   display: inline-block;
-  margin-top: -20px;
+  margin-top: 10px;
   font-weight: 300;
   font-size: 48px;
   color: #fff;
@@ -365,6 +365,7 @@ section {
 
 
 .contact-content {
+  justify-content:center;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 16vh;
@@ -416,24 +417,16 @@ section {
   border-radius: 3px;
   text-transform: uppercase;
   font-size: 11px;
-  color: #fff;
+  color: #000;
   font-weight: 700;
   text-decoration: none;
   letter-spacing: 0.5px;
 }
 
-.map {
-  margin-bottom: 30px;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 30px 20px;
-}
-
-
 
 footer {
   text-align: center;
-  background-color: #282b2f;
+  background-color: #000000;
   padding: 70px 0px;
 }
 
@@ -459,7 +452,7 @@ footer ul li a {
   text-align: center;
   display: inline-block;
   background-color: #ff7d27;
-  color: #282b2f;
+  color: #000000;
   border-radius: 50%;
   text-decoration: none;
   transition: all 0.5s;
@@ -467,7 +460,7 @@ footer ul li a {
 }
 
 footer ul li a:hover {
-  color: #282b2f;
+  color: #000000;
   background-color: #ff8e43;
 }
 
@@ -493,7 +486,7 @@ footer em {
   }
 
   .baner-content h1 {
-    font-size: 64px;
+    font-size: 42px;
   }
 
   .baner-content em {
